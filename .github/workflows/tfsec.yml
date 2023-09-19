@@ -7,13 +7,6 @@ name: tfsec
 
 on:
   workflow_dispatch:
-  workflow_call:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-  schedule:
-    - cron: '0 7 * * *'
 
 jobs:
   tfsec:
