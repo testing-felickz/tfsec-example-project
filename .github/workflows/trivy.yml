@@ -5,12 +5,17 @@
 
 name: Trivy
 
-on: push
+on:
+  schedule:
+    - cron: '20 4 * * 1'
+  workflow_dispatch:
   
 jobs:
   trivy:
     permissions:
-      security-events: write # To upload sarif files
+      contents: read # for actions/checkout to fetch code
+      security-events: write # for github/codeql-action/upload-sarif to upload SARIF results
+      actions: read # only required for a private repository by github/codeql-action/upload-sarif to get the Action run status
     runs-on: "ubuntu-20.04"
     steps:
       - name: Checkout
@@ -19,13 +24,12 @@ jobs:
           fetch-depth: 0
 
       - name: Run Trivy vulnerability scanner in IaC mode
-        # uses: aquasecurity/trivy-action@fbd16365eb88e12433951383f5e99bd901fc618f #tag=0.12.0
-        uses: aquasecurity/trivy-action@0.8.0
+        uses: aquasecurity/trivy-action@9ab158e8597f3b310480b9a69402b419bc03dbd5 #tag=0.8.0
         with:
           scan-type: 'config'
           format: 'sarif'
           output: 'trivy-results.sarif'
-
+  
       - name: Upload Trivy scan results to GitHub Security tab
         uses: github/codeql-action/upload-sarif@312e093a1892bd801f026f1090904ee8e460b9b6 # v2.1.34
         with:
