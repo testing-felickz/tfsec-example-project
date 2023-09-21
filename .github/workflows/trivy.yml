@@ -63,7 +63,7 @@ jobs:
 
     container:
       # A Docker image with TRivy installed. Do not change this.
-      image: aquasec/trivy:0.38.1
+      image: aquasec/trivy:0.31.2
 
     # Skip any PR created by dependabot to avoid permission issues:
     if: (github.actor != 'dependabot[bot]')
