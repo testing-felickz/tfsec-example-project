@@ -1,23 +1,30 @@
-###########################
-name: codeql-extractor-iac
+name: "CodeQL IaC"
 
 on:
   push:
-  # workflow_dispatch:
-  # schedule:
-  #   - cron: '0 5 * * 1'
-
-permissions:
-  # required for all workflows
-  security-events: write
-  # only required for workflows in private repositories
-  actions: read
-  contents: read
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch:
 
 jobs:
- codeql-extractor-iac:
-  name: codeql-extractor-iac
-  runs-on: ubuntu-latest
-  steps:
-   - name: Initialize and Analyze IaC
-     uses: advanced-security/codeql-extractor-iac@main
+  analyze:
+    name: Analyze
+    runs-on: "ubuntu-latest"
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Initialize and Analyze IaC
+        id: codeql_iac
+        uses: advanced-security/codeql-extractor-iac@main
+
+      - name: Upload SARIF file
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: ${{ steps.codeql_iac.outputs.sarif }}
