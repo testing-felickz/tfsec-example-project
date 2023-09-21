@@ -74,7 +74,7 @@ jobs:
         uses: actions/checkout@v3
       # Run the "trivy ci" command on the command line of the docker image.
       - name: Run Trivy
-        run: trivy config . --format template --template "@contrib/sarif.tpl"
+        run: trivy config . --format template --template "@contrib/sarif.tpl" --output trivy.sarif
       # Upload SARIF file generated in previous step
       - name: Upload SARIF file
         uses: github/codeql-action/upload-sarif@v2

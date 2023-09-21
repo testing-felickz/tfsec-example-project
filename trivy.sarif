@@ -909,7 +909,7 @@
       "columnKind": "utf16CodeUnits",
       "originalUriBaseIds": {
         "ROOTPATH": {
-          "uri": "file:///Users/ignacioinigo/Documents/workspace/tfsec-example-project/"
+          "uri": "file:///"
         }
       }
     }
