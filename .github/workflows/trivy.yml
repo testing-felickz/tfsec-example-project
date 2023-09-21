@@ -29,8 +29,14 @@ jobs:
         uses: aquasecurity/trivy-action@0.12.0
         with:
           scan-type: 'config'
-          image-ref: .
+          hide-progress: false
           format: 'sarif'
+          # output: 'trivy-results.sarif'
+          exit-code: '1'
+          ignore-unfixed: true
+          # scan-type: 'config'
+          # image-ref: .
+          # format: 'sarif'
       #     output: 'trivy-results.sarif'
   
       # - name: Upload Trivy scan results to GitHub Security tab
