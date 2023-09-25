@@ -79,7 +79,7 @@ jobs:
       - name: Remove git string from the file
         run: |
           # Remove the "git::" string from the file using sed
-          sed -i 's/git:://g' path/to/your/file
+          sed -i 's/git:://g' trivy.sarif
       # Upload SARIF file generated in previous step
       - name: Upload SARIF file
         uses: github/codeql-action/upload-sarif@v2
