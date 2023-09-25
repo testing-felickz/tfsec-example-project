@@ -343,13 +343,13 @@
           "ruleIndex": 0,
           "level": "warning",
           "message": {
-            "text": "Artifact: https:/github.com/terraform-aws-modules/terraform-aws-rds?ref=v2.0.0/modules/db_instance/main.tf\nType: terraform\nVulnerability AVD-AWS-0077\nSeverity: MEDIUM\nMessage: Instance has very low backup retention period.\nLink: [AVD-AWS-0077](https://avd.aquasec.com/misconfig/avd-aws-0077)"
+            "text": "Artifact: git::https:/github.com/terraform-aws-modules/terraform-aws-rds?ref=v2.0.0/modules/db_instance/main.tf\nType: terraform\nVulnerability AVD-AWS-0077\nSeverity: MEDIUM\nMessage: Instance has very low backup retention period.\nLink: [AVD-AWS-0077](https://avd.aquasec.com/misconfig/avd-aws-0077)"
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "https:/github.com/terraform-aws-modules/terraform-aws-rds?ref=v2.0.0/modules/db_instance/main.tf",
+                  "uri": "git::https:/github.com/terraform-aws-modules/terraform-aws-rds?ref=v2.0.0/modules/db_instance/main.tf",
                   "uriBaseId": "ROOTPATH"
                 },
                 "region": {
@@ -360,7 +360,7 @@
                 }
               },
               "message": {
-                "text": "https:/github.com/terraform-aws-modules/terraform-aws-rds?ref=v2.0.0/modules/db_instance/main.tf"
+                "text": "git::https:/github.com/terraform-aws-modules/terraform-aws-rds?ref=v2.0.0/modules/db_instance/main.tf"
               }
             }
           ]
@@ -370,13 +370,13 @@
           "ruleIndex": 1,
           "level": "error",
           "message": {
-            "text": "Artifact: https:/github.com/terraform-aws-modules/terraform-aws-rds?ref=v2.0.0/modules/db_instance/main.tf\nType: terraform\nVulnerability AVD-AWS-0080\nSeverity: HIGH\nMessage: Instance does not have storage encryption enabled.\nLink: [AVD-AWS-0080](https://avd.aquasec.com/misconfig/avd-aws-0080)"
+            "text": "Artifact: git::https:/github.com/terraform-aws-modules/terraform-aws-rds?ref=v2.0.0/modules/db_instance/main.tf\nType: terraform\nVulnerability AVD-AWS-0080\nSeverity: HIGH\nMessage: Instance does not have storage encryption enabled.\nLink: [AVD-AWS-0080](https://avd.aquasec.com/misconfig/avd-aws-0080)"
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "https:/github.com/terraform-aws-modules/terraform-aws-rds?ref=v2.0.0/modules/db_instance/main.tf",
+                  "uri": "git::https:/github.com/terraform-aws-modules/terraform-aws-rds?ref=v2.0.0/modules/db_instance/main.tf",
                   "uriBaseId": "ROOTPATH"
                 },
                 "region": {
@@ -387,7 +387,7 @@
                 }
               },
               "message": {
-                "text": "https:/github.com/terraform-aws-modules/terraform-aws-rds?ref=v2.0.0/modules/db_instance/main.tf"
+                "text": "git::https:/github.com/terraform-aws-modules/terraform-aws-rds?ref=v2.0.0/modules/db_instance/main.tf"
               }
             }
           ]
@@ -397,13 +397,13 @@
           "ruleIndex": 2,
           "level": "note",
           "message": {
-            "text": "Artifact: https:/github.com/terraform-aws-modules/terraform-aws-rds?ref=v2.0.0/modules/db_instance/main.tf\nType: terraform\nVulnerability AVD-AWS-0133\nSeverity: LOW\nMessage: Instance does not have performance insights enabled.\nLink: [AVD-AWS-0133](https://avd.aquasec.com/misconfig/avd-aws-0133)"
+            "text": "Artifact: git::https:/github.com/terraform-aws-modules/terraform-aws-rds?ref=v2.0.0/modules/db_instance/main.tf\nType: terraform\nVulnerability AVD-AWS-0133\nSeverity: LOW\nMessage: Instance does not have performance insights enabled.\nLink: [AVD-AWS-0133](https://avd.aquasec.com/misconfig/avd-aws-0133)"
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "https:/github.com/terraform-aws-modules/terraform-aws-rds?ref=v2.0.0/modules/db_instance/main.tf",
+                  "uri": "git::https:/github.com/terraform-aws-modules/terraform-aws-rds?ref=v2.0.0/modules/db_instance/main.tf",
                   "uriBaseId": "ROOTPATH"
                 },
                 "region": {
@@ -414,7 +414,7 @@
                 }
               },
               "message": {
-                "text": "https:/github.com/terraform-aws-modules/terraform-aws-rds?ref=v2.0.0/modules/db_instance/main.tf"
+                "text": "git::https:/github.com/terraform-aws-modules/terraform-aws-rds?ref=v2.0.0/modules/db_instance/main.tf"
               }
             }
           ]
@@ -424,13 +424,13 @@
           "ruleIndex": 3,
           "level": "warning",
           "message": {
-            "text": "Artifact: https:/github.com/terraform-aws-modules/terraform-aws-rds?ref=v2.0.0/modules/db_instance/main.tf\nType: terraform\nVulnerability N/A\nSeverity: MEDIUM\nMessage: Instance does not have IAM Authentication enabled\nLink: [N/A](https://avd.aquasec.com/misconfig/n/a)"
+            "text": "Artifact: git::https:/github.com/terraform-aws-modules/terraform-aws-rds?ref=v2.0.0/modules/db_instance/main.tf\nType: terraform\nVulnerability N/A\nSeverity: MEDIUM\nMessage: Instance does not have IAM Authentication enabled\nLink: [N/A](https://avd.aquasec.com/misconfig/n/a)"
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "https:/github.com/terraform-aws-modules/terraform-aws-rds?ref=v2.0.0/modules/db_instance/main.tf",
+                  "uri": "git::https:/github.com/terraform-aws-modules/terraform-aws-rds?ref=v2.0.0/modules/db_instance/main.tf",
                   "uriBaseId": "ROOTPATH"
                 },
                 "region": {
@@ -441,7 +441,7 @@
                 }
               },
               "message": {
-                "text": "https:/github.com/terraform-aws-modules/terraform-aws-rds?ref=v2.0.0/modules/db_instance/main.tf"
+                "text": "git::https:/github.com/terraform-aws-modules/terraform-aws-rds?ref=v2.0.0/modules/db_instance/main.tf"
               }
             }
           ]
@@ -451,13 +451,13 @@
           "ruleIndex": 3,
           "level": "warning",
           "message": {
-            "text": "Artifact: https:/github.com/terraform-aws-modules/terraform-aws-rds?ref=v2.0.0/modules/db_instance/main.tf\nType: terraform\nVulnerability N/A\nSeverity: MEDIUM\nMessage: Instance does not have Deletion Protection enabled\nLink: [N/A](https://avd.aquasec.com/misconfig/n/a)"
+            "text": "Artifact: git::https:/github.com/terraform-aws-modules/terraform-aws-rds?ref=v2.0.0/modules/db_instance/main.tf\nType: terraform\nVulnerability N/A\nSeverity: MEDIUM\nMessage: Instance does not have Deletion Protection enabled\nLink: [N/A](https://avd.aquasec.com/misconfig/n/a)"
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "https:/github.com/terraform-aws-modules/terraform-aws-rds?ref=v2.0.0/modules/db_instance/main.tf",
+                  "uri": "git::https:/github.com/terraform-aws-modules/terraform-aws-rds?ref=v2.0.0/modules/db_instance/main.tf",
                   "uriBaseId": "ROOTPATH"
                 },
                 "region": {
@@ -468,7 +468,7 @@
                 }
               },
               "message": {
-                "text": "https:/github.com/terraform-aws-modules/terraform-aws-rds?ref=v2.0.0/modules/db_instance/main.tf"
+                "text": "git::https:/github.com/terraform-aws-modules/terraform-aws-rds?ref=v2.0.0/modules/db_instance/main.tf"
               }
             }
           ]
