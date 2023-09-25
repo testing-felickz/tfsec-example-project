@@ -79,7 +79,7 @@ jobs:
       - name: Remove git string from the file
         run: |
           # Remove the "git::" string from the file using sed
-          sed -i 's/git:://g' trivy.sarif
+          sed -i 's|git::https:/||g' trivy.sarif
       # Cat
       - name: Cat
         run: cat trivy.sarif
