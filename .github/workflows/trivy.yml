@@ -75,6 +75,11 @@ jobs:
       # Run the "trivy ci" command on the command line of the docker image.
       - name: Run Trivy
         run: trivy config . --format sarif --severity LOW --output trivy.sarif
+      # Sed
+      - name: Remove git string from the file
+        run: |
+          # Remove the "git::" string from the file using sed
+          sed -i 's/git:://g' path/to/your/file
       # Upload SARIF file generated in previous step
       - name: Upload SARIF file
         uses: github/codeql-action/upload-sarif@v2
