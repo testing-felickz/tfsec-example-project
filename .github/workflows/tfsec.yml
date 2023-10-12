@@ -24,6 +24,7 @@ jobs:
       - name: Run tfsec
         uses: aquasecurity/tfsec-sarif-action@21ded20e8ca120cd9d3d6ab04ef746477542a608 #tag=0.1.4
         with:
+          tfsec_version: "v1.28.1"
           sarif_file: tfsec.sarif
           full_repo_scan: true
 
