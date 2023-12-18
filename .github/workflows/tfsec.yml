@@ -29,7 +29,7 @@ jobs:
           full_repo_scan: true
 
       - name: Upload SARIF file
-        uses: github/codeql-action/upload-sarif@9885f86fab4879632b7e44514f19148225dfbdcd #tag=codeql-bundle-20220421
+        uses: github/codeql-action/upload-sarif@03e7845b7bfcd5e7fb63d1ae8c61b0e791134fab #tag=codeql-bundle-20220421
         with:
           # Path to SARIF file relative to the root of the repository
           sarif_file: tfsec.sarif
